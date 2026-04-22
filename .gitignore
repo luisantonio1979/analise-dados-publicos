@@ -1,0 +1,7 @@
+csv_extraidos/
+*.csv
+*.zip
+*.gz
+*.parquet
+*.xlsx
+data/
