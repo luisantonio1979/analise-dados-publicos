@@ -5,3 +5,7 @@ csv_extraidos/
 *.parquet
 *.xlsx
 data/
+venv_dados/
+__pycache__/
+.ipynb_checkpoints/
+*.csv

@@ -1,54 +1,87 @@
-# analise-dados-publicos
+# 📊 Análise do Programa Pé de Meia (Brasil)
 
-“Análise exploratória de dados públicos com Python”
+Este projeto realiza uma análise exploratória dos dados do programa Pé de Meia no Brasil, com foco na distribuição de recursos públicos e na evolução temporal dos pagamentos.
 
+O objetivo é transformar dados brutos em insights estruturados, permitindo entender padrões geográficos e comportamentais da execução do programa.
 
+---
 
-\# 📊 Análise de Dados Públicos – Gasto Federal
+## 🎯 Objetivo
 
+Analisar a distribuição dos recursos do programa Pé de Meia no Brasil, explorando padrões geográficos e temporais para identificar concentração e evolução dos pagamentos ao longo do tempo.
 
+---
 
-Este repositório contém uma análise exploratória de dados públicos de gastos federais do Brasil, com foco na série histórica mensal dos valores empenhados por órgão.
+## 🧠 Perguntas de análise
 
+A partir dos dados, buscamos responder:
 
+- Como os recursos estão distribuídos entre estados e municípios?
+- Existem regiões com maior concentração de pagamentos?
+- Como os valores evoluem ao longo dos meses?
+- Há padrões claros na execução do programa ao longo do tempo?
 
-O objetivo é demonstrar habilidades em engenharia de dados, manipulação de datasets grandes e comunicação de insights com Python.
+---
 
+## 🛠️ Tecnologias utilizadas
 
-
-\---
-
-
-
-\## 🧠 Visão Geral
-
-
-
-Este projeto processa e analisa dados públicos extraídos mensalmente (CSV) e consolida as informações em um notebook exploratório.
-
-
-
-O código inclui tratamento de dados, transformação, agregações e visualizações que ajudam a entender padrões de gasto ao longo do tempo.
-
-
-
-\---
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Jupyter Notebook  
 
 
+## 📊 Principais análises realizadas
+Consolidação de múltiplos arquivos CSV mensais
+Limpeza e padronização dos dados
+Engenharia de variáveis temporais (ano/mês)
+Agregações por estado e município
+Análise de evolução temporal dos pagamentos
+Visualização de tendências e rankings
+## 📈 Principais insights
+Identificação de concentração regional dos recursos
+Estados e municípios com maior volume financeiro
+Evolução dos pagamentos ao longo do tempo
+Padrões de distribuição que ajudam a entender a execução do programa
+## 🚀 Como executar o projeto
+Clone este repositório
 
-\## 📁 Estrutura do Repositório
+Instale as dependências necessárias:
 
+pip install pandas numpy matplotlib seaborn
 
+Execute o notebook principal:
+
+notebooks/analise_pe_de_meia.ipynb
+Explore os gráficos e resultados gerados em /outputs
+💡 Possíveis melhorias futuras
+Criação de dashboard interativo (Power BI ou Plotly Dash)
+Análise por perfil socioeconômico (se dados disponíveis)
+Modelos preditivos de evolução dos pagamentos
+Automação do pipeline de atualização dos dados
+👤 Autor
+
+Luis Antonio
+Projeto desenvolvido para portfólio em análise de dados, com foco em dados públicos e storytelling analítico.
+
+---
+
+## 📁 Estrutura do projeto
 
 ```text
-
 analise-dados-publicos/
-
-├── .gitignore            # Arquivo de exclusões para evitar versionar dados grandes
-
-├── analise\_pe.ipynb      # Notebook principal com análise exploratória
-
-├── README.md             # Documentação deste projeto
-
-└── csv\_extraidos/        # Dados extraídos (não versionados no GitHub)
-
+│
+├── notebooks/
+│   └── analise_pe_de_meia.ipynb   # Notebook principal
+│
+├── data/
+│   ├── raw/                       # Dados originais (zip/csv)
+│   └── processed/                # Dados tratados
+│
+├── outputs/
+│   ├── graficos/
+│   └── dataset_final.csv
+│
+└── README.md
